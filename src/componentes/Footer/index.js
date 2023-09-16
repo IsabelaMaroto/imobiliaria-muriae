@@ -1,4 +1,4 @@
-import Logo1 from '../../img/logo1.png'
+import Logo2 from '../../img/logo2.png'
 import CopyIcone from '../../img/C.png'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -72,7 +72,7 @@ export function Footer(){
                         <h2>{info.info1}</h2>
                     </Link>
                     <Link className='link' to={info.info2Link}>
-                        <h3><img src={index === 3 ? info.Relogio :""}/> {info.info2}</h3>
+                        <h3> <img src={index === 3 ? info.Relogio :""}/>{info.info2}</h3>
                     </Link>
                     <Link className='link' to={info.info3Link}>
                         <h3><img src={index === 3 ? info.Instagram :''}/> {info.info3}</h3>
@@ -89,12 +89,12 @@ export function Footer(){
             <Botom>
                 <div className='textoBotom'>
                     <Link className='link' to={'/'}>
-                        <h4>www.imobiliariamuriae.com.br <img src={CopyIcone} alt={CopyIcone}/> 2022</h4>
+                        <h4>www.imobiliariajacunda.com.br <img src={CopyIcone} alt={CopyIcone}/> 2022</h4>
                     </Link>
                 </div>
                 <div className='logoBotom'>
                     <Link to={'/'}>
-                        <img src={Logo1} alt={Logo1}/>
+                        <img src={Logo2} alt="Logo1"/>
                     </Link>
                 </div>
             </Botom>

@@ -55,7 +55,7 @@ export function ResultadoCasas(casaPesquisada) {
         {casaPesquisada.map((casa, index) => (
             <Link to={`/PaginaCasa/${casa.id}`} key={index} className='linkPaginaCasa'>
                 <Imagem className="imagem">
-                    <img src={casa.imagem} alt={casa.titulo} />
+                    <img src={require(`../../../../img/${casa.imagem}`)} alt={casa.titulo} />
                 </Imagem>
                 <Texto>
                     <h2>{casa.titulo}</h2>
@@ -66,5 +66,5 @@ export function ResultadoCasas(casaPesquisada) {
                 </Descricao>
             </Link>
         ))}
-    </ExibeCasas>;
+    </ExibeCasas>
 }

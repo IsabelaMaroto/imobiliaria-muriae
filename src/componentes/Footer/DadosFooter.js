@@ -5,10 +5,10 @@ import IconeRelogio from '../../img/relogioIcone.png';
 
 export const DadosFooter=[
     {
-        info1: 'Muriaé Imobiliária',
+        info1: 'Jacundá Imobiliária',
         info1Link: '/',
         info2: 'R. Alameda São José, nº 43.',
-        info3:'Centro - Muriaé - MG | CEP 36880-000',
+        info3:'Centro - Jacundá - PA | CEP 36880-000',
         info4:'Aluguéis e Vendas',
         info5: 'CRECI XXXXXX',
     },
@@ -37,11 +37,11 @@ export const DadosFooter=[
     {
         info1: 'Informações',
         info2: 'Horário Funcionamento: 08:00h às 17:30h',
-        info3:  '@muriaeimobiliaria',
+        info3:  '@jacundaimobiliaria',
         info3Link: '/instagram',
         info4:  'Fale Conosco',
         info4Link: '/whatsapp',
-        info5:  'muriaeimobiliaria@outlook.com',
+        info5:  'jacundaimobiliaria@outlook.com',
         info5Link: '/email',
         Instagram: IconeInstagram,
         Telefone: IconeTelefone,

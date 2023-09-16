@@ -8,15 +8,16 @@ const Imagem= styled.img`
     width:  1600px;
     object-fit: cover;
 `
+
 export function CarouselCasas(Casa) {
     return (
         <div>
             <Carousel>
-                {Casa.banner.map((casa,index)=>(
+                {Casa.banner.map((img,index)=>(
                     <Carousel.Item key={index}>
                         <Imagem 
-                            src={casa}
-                            alt={casa.alt} 
+                            src={require(`../../../img/${img}`)}
+                            alt="oi"
                         />
                     </Carousel.Item>
                 ))}

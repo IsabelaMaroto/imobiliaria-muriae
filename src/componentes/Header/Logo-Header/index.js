@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import styled from "styled-components"
-import LogoImg from "../../../img/logo2.png"
+import LogoImg from "../../../img/logo.png"
 
 const ContainerLogo= styled.div`
 

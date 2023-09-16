@@ -1,0 +1,130 @@
+{
+    "casas": [
+      {
+        "imagem": "casa1.jpg",
+       "banner": [
+        "casa1.jpg",
+          "FotosInteriores1.jpg",
+          "FotosInteriores2.jpg",
+          "FotosInteriores3.jpg",
+          "FotosInteriores6.jpg"
+        ],
+        "titulo": "Casa 01",
+        "preco": "5.000",
+        "metros": "200",
+        "banheiro": "3",
+        "quartos": "2",
+        "codigo": "000",
+        "tipo": "casa",
+        "id": 1,
+        "link": "/PaginaCasa/1",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Casa ampla toda construída em alvenaria e com muitos detalhes em madeira de Angelim-Pedra. Muito espaçosa, o duplex conta com um pequeno pomar. São mais de 350m de terreno e 200m2 de area construida, distribuídos em 4 quartos sendo uma suite, copa e cozinha conjugados. A suíte possui uma sacada com linda vista para cidade garantindo uma excelente ventilação e luminosidade por todo o imóvel, isso sem contar o telhado colonial pela garagem indo até o espaço gourmet. A piscina, próxima a churrasqueira, equipada com chuveirão. A casa oferece as condições ideais para festas e encontros sociais, pois garante espaço, privacidade e segurança. O imóvel ainda conta com piscina (25mil L), quintal com árvores frutíferas e espaço para sua horta."
+      },
+      {
+        "imagem": "casa2.jpg",
+       "banner": [
+          "casa2.jpg",
+          "casa2Img (4).jpg",
+          "casa2Img (5).jpg",
+          "casa2Img (6).jpg",
+          "casa2Img (7).jpg"
+        ],
+        "titulo": "Casa 02",
+        "preco": "4.500",
+        "metros": "300",
+        "banheiro": "2",
+        "quartos": "3",
+        "codigo": "111",
+        "tipo": "casa",
+        "id": 2,
+        "link": "/PaginaCasa/2",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Lorem ipsum nisi facilisis taciti lacus curabitur aenean adipiscing massa fusce fames class, gravida ipsum suspendisse metus venenatis euismod fermentum blandit sem duis varius. duis vitae dictum quisque lacus porta inceptos donec, morbi sagittis hac rhoncus risus turpis neque, lacinia elit taciti vestibulum diam ut. blandit ullamcorper leo hac in dapibus mauris ornare, eu proin sollicitudin vehicula odio ipsum pretium aenean, senectus sollicitudin orci sollicitudin conubia quisque. sed lorem ultrices vestibulum auctor ac vitae varius vehicula himenaeos, nostra neque condimentum bibendum mattis risus facilisis urna donec magna, vestibulum aliquet gravida turpis senectus commodo ultrices potenti."
+      },
+      {
+        "imagem": "casa3.jpg",
+       "banner": [
+          "casa3.jpg",
+          "casa3Img (1).jpg",
+          "casa3Img (2).jpg",
+          "casa3Img (3).jpg",
+          "casa3Img (4).jpg",
+          "casa3Img (5).jpg"
+        ],
+        "titulo": "Casa 03",
+        "preco": "5.500",
+        "metros": "275",
+        "banheiro": "3",
+        "quartos": "4",
+        "codigo": "222",
+        "tipo": "casa",
+        "id": 3,
+        "link": "/PaginaCasa/3",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Lorem ipsum nisi facilisis taciti lacus curabitur aenean adipiscing massa fusce fames class, gravida ipsum suspendisse metus venenatis euismod fermentum blandit sem duis varius. duis vitae dictum quisque lacus porta inceptos donec, morbi sagittis hac rhoncus risus turpis neque, lacinia elit taciti vestibulum diam ut. blandit ullamcorper leo hac in dapibus mauris ornare, eu proin sollicitudin vehicula odio ipsum pretium aenean, senectus sollicitudin orci sollicitudin conubia quisque. sed lorem ultrices vestibulum auctor ac vitae varius vehicula himenaeos, nostra neque condimentum bibendum mattis risus facilisis urna donec magna, vestibulum aliquet gravida turpis senectus commodo ultrices potenti."
+      },
+      {
+        "imagem": "casa4.jpg",
+       "banner": [
+          "casa4.jpg",
+          "casa4Img (1).jpg",
+          "casa4Img (2).jpg",
+          "casa4Img (3).jpg"
+        ],
+        "titulo": "Casa 04",
+        "preco": "3.000",
+        "metros": "150",
+        "banheiro": "2",
+        "quartos": "2",
+        "codigo": "444",
+        "tipo": "casa",
+        "id": 4,
+        "link": "/PaginaCasa/4",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Lorem ipsum nisi facilisis taciti lacus curabitur aenean adipiscing massa fusce fames class, gravida ipsum suspendisse metus venenatis euismod fermentum blandit sem duis varius. duis vitae dictum quisque lacus porta inceptos donec, morbi sagittis hac rhoncus risus turpis neque, lacinia elit taciti vestibulum diam ut. blandit ullamcorper leo hac in dapibus mauris ornare, eu proin sollicitudin vehicula odio ipsum pretium aenean, senectus sollicitudin orci sollicitudin conubia quisque. sed lorem ultrices vestibulum auctor ac vitae varius vehicula himenaeos, nostra neque condimentum bibendum mattis risus facilisis urna donec magna, vestibulum aliquet gravida turpis senectus commodo ultrices potenti."
+      },
+      {
+        "imagem": "apto1.jpg",
+       "banner": [
+          "apto1.jpg",
+          "apto1 (1).jpg",
+          "apto1 (2).jpg",
+          "apto1 (3).jpg",
+          "apto1 (4).jpg"
+        ],
+        "titulo": "Apto 01",
+        "preco": "2.000",
+        "metros": "80",
+        "banheiro": "2",
+        "quartos": "2",
+        "codigo": "555",
+        "tipo": "apartamento",
+        "id": 5,
+        "link": "/PaginaCasa/5",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Lorem ipsum nisi facilisis taciti lacus curabitur aenean adipiscing massa fusce fames class, gravida ipsum suspendisse metus venenatis euismod fermentum blandit sem duis varius. duis vitae dictum quisque lacus porta inceptos donec, morbi sagittis hac rhoncus risus turpis neque, lacinia elit taciti vestibulum diam ut. blandit ullamcorper leo hac in dapibus mauris ornare, eu proin sollicitudin vehicula odio ipsum pretium aenean, senectus sollicitudin orci sollicitudin conubia quisque. sed lorem ultrices vestibulum auctor ac vitae varius vehicula himenaeos, nostra neque condimentum bibendum mattis risus facilisis urna donec magna, vestibulum aliquet gravida turpis senectus commodo ultrices potenti."
+      },
+      {
+        "imagem": "apto2.jpg",
+       "banner": [
+          "apto2.jpg",
+          "apto2 (1).jpg",
+          "apto2 (2).jpg",
+          "apto2 (3).jpg",
+          "apto2 (4).jpg"
+        ],
+        "titulo": "Apto 02",
+        "preco": "3.000",
+        "metros": "95",
+        "banheiro": "2",
+        "quartos": "2",
+        "codigo": "666",
+        "tipo": "apartamento",
+        "id": 6,
+        "link": "/PaginaCasa/6",
+        "endereco": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26609.500530635793!2d-53.37689615681545!3d-33.52250866819789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x950d1d96faf0d2c9%3A0x9e6e64e242355eb0!2sSanta%20Vit%C3%B3ria%20do%20Palmar%2C%20RS%2C%2096230-000!5e0!3m2!1spt-BR!2sbr!4v1672263596572!5m2!1spt-BR!2sbr",
+        "descricao": "Lorem ipsum nisi facilisis taciti lacus curabitur aenean adipiscing massa fusce fames class, gravida ipsum suspendisse metus venenatis euismod fermentum blandit sem duis varius. duis vitae dictum quisque lacus porta inceptos donec, morbi sagittis hac rhoncus risus turpis neque, lacinia elit taciti vestibulum diam ut. blandit ullamcorper leo hac in dapibus mauris ornare, eu proin sollicitudin vehicula odio ipsum pretium aenean, senectus sollicitudin orci sollicitudin conubia quisque. sed lorem ultrices vestibulum auctor ac vitae varius vehicula himenaeos, nostra neque condimentum bibendum mattis risus facilisis urna donec magna, vestibulum aliquet gravida turpis senectus commodo ultrices potenti."
+      }
+    ]
+  }

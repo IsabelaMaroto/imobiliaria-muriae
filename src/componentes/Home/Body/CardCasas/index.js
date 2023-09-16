@@ -1,10 +1,10 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import {ListaCasas} from '../../../ListaCasas/DadosCasas';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { PainelCasas } from '../../../PainelDescritivo';
+import axios from 'axios';
 
 const CasaCarousel=styled.div`
 .link{
@@ -42,7 +42,17 @@ const responsive = {
     1024: { items: 3 },
 };
 
+let ListaCasas;
+
+async function Resposta(){
+  const {data} = await axios.get(`http://localhost:3000/casas`);
+  ListaCasas = data
+}
+await Resposta()
 export const Carousel = () => (
+  <>
+  {
+    ListaCasas ? (
   <section>
     <BoxTituloCard>
       <h2>Destaques</h2>
@@ -52,7 +62,7 @@ export const Carousel = () => (
         items={ListaCasas.map((casa)=>(
           <CasaCarousel className="item">
             <Link to={`PaginaCasa/${casa.id}`} className='link'>
-              <img src={casa.imagem} alt='casa'/>
+              <img src={require(`../../../../img/${casa.imagem}`)} alt='casa'/>
               <h2>{casa.titulo}</h2>
             </Link>
             <DescricaoContainer>
@@ -64,5 +74,8 @@ export const Carousel = () => (
         controlsStrategy="default"
     />
   </section>
-     
+     ) : "vazio"
+    }
+
+</>
 );

@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
-import { ListaCasas } from "../ListaCasas/DadosCasas";
 import styled from "styled-components";
 import { Mapa } from "./Mapa";
 import { CarouselCasas } from "./Carousel";
 import {PainelCasas} from '../PainelDescritivo/index';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 const TextosCasa = styled.div`
     display: flex;
@@ -34,19 +35,33 @@ h3{
 }
 `
 
+
 export default function PaginaCasa(){
-    // PEGA O ID DO PARÂMETRO DA URL ex: localhost/ ID = 1
+    const [Casa, setCasa] = useState();
+
     let { id } = useParams();
 
-    // DENTRO DE ListaCasas PROCURA UMA casa COM ID = AO PARÂMETRO
-    const Casa = ListaCasas.find((casa) => {
-        if(casa.id === id){
-            return casa
-        } return null
-    })
+    async function Resposta(){
+        const {data} = await axios.get(`http://localhost:3000/casas`);
+
+        const novaCasa = data.find((casa) => {
+              if(casa.id == id){
+                  return casa;
+              }
+          })
+        
+        setCasa(novaCasa)
+    }
     
-    // PASSA PARA O CAROUSEL A CASA ESPECÍFICA (com banner específico)
-    return(
+    useEffect(() => {
+        Resposta()
+    }, []);
+    
+   
+    return(<>
+        {
+            Casa ? (
+        
         <section>
             {CarouselCasas(Casa)}
             <div>
@@ -63,6 +78,10 @@ export default function PaginaCasa(){
             </div>
             {Mapa(Casa)}
         </section>
+    ) : null
+        }
+    
+    </>
     )
 }
 

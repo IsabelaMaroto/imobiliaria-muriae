@@ -7,7 +7,7 @@ padding: 30px 100px;
 `
 const MapaIframe= styled.iframe`
 border: 0;
-frameBorder= 0;
+
 
 `
 
