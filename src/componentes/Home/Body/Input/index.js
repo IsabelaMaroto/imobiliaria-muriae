@@ -20,7 +20,7 @@ const FiltrosContainer = styled.div`
 
   .botao {
     background-color: black;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 90px;
     height: 42px;
     border-radius: 8px;
@@ -35,27 +35,49 @@ const Pesquisa = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: #000000;
   width: 70%;
-  height: 70px;
+  min-height: 100px;
   border-radius: 10px;
-  border: 3px solid #d89e1a;
+  border: 0.8px solid #d89e1a;
 `;
 const Selects = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 600px;
-  color: #FFFFFF;
+
+  .container-select {
+    padding-right: 50px;
+
+    label {
+      font-size: 1.1em;
+      padding-right: 10px;
+      color: #ffffff;
+    }
+    .select {
+      background-color: #000000;
+      color: #ffffff;
+      border: 0.8px solid #d89e1a;
+      min-width: 117px;
+      height: 42px;
+      border-radius: 8px;
+      text-align: center;
+      :hover {
+        cursor: pointer;
+      }
+      
+    }
+  }
 `;
 
 function PesquisaInput() {
   const [casaPesquisada, setCasas] = useState([]);
+  const [casaJaPesquisada, setCasaJaPesquisada] = useState(false);
 
   return (
     <CasasContainer>
-      {Filtros(setCasas)}
-      {ResultadoCasas(casaPesquisada)}
+      {Filtros(setCasas, setCasaJaPesquisada)}
+      {ResultadoCasas(casaPesquisada, casaJaPesquisada)}
     </CasasContainer>
   );
 }
@@ -69,29 +91,29 @@ async function Resposta() {
 }
 Resposta();
 
-function Filtros(setCasas) {
+function Filtros(setCasas, setCasaJaPesquisada) {
   return (
     <FiltrosContainer>
       <Pesquisa>
         <Selects>
-          <div>
-            <label>Tipo</label>
-            <select name="input" id="input">
+          <div className="container-select">
+            <label>Tipo:</label>
+            <select name="input" id="input" className="select">
               <option value="casa">Casa</option>
               <option value="apartamento">Apartamento</option>
             </select>
           </div>
-          <div>
-            <label>Quartos</label>
-            <select name="quartos" id="quartos">
+          <div className="container-select">
+            <label>Quartos:</label>
+            <select name="quartos" id="quartos" className="select">
               <option value="1">1+</option>
               <option value="2">2+</option>
               <option value="3">3+</option>
             </select>
           </div>
-          <div>
-            <label>Banheiros</label>
-            <select name="banheiros" id="banheiros">
+          <div className="container-select">
+            <label>Banheiros:</label>
+            <select name="banheiros" id="banheiros" className="select">
               <option value="1">1+</option>
               <option value="2">2+</option>
               <option value="3">3+</option>
@@ -106,13 +128,20 @@ function Filtros(setCasas) {
                 .getElementById("input")
                 .value.toLowerCase();
 
-              const quartosSelecionados = document.getElementById("quartos").value;
-              const banheirosSelecionados = document.getElementById("banheiros").value;
+              const quartosSelecionados =
+                document.getElementById("quartos").value;
+              const banheirosSelecionados =
+                document.getElementById("banheiros").value;
 
-              const resultadoPesquisa = ListaCasas.filter((casa) =>
-                casa.tipo === tipoSelecionado && (casa.quartos >= quartosSelecionados && casa.banheiro >= banheirosSelecionados)
+              const resultadoPesquisa = ListaCasas.filter(
+                (casa) =>
+                  casa.tipo === tipoSelecionado &&
+                  casa.quartos >= quartosSelecionados &&
+                  casa.banheiro >= banheirosSelecionados
               );
+
               setCasas(resultadoPesquisa);
+              setCasaJaPesquisada(true);
             }}
           >
             Buscar
